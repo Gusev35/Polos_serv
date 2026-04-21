@@ -1,0 +1,17 @@
+package PolosServ.features.register
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class RegisterReceiveRemote(
+    val id: Int,
+    val login: String,
+    val email: String,
+    val password: String,
+    val firstName: String,
+    val lastName: String,
+    val group: String
+)
+@Serializable
+data class RegisterResponseRemote(
+    val token: String
+)
